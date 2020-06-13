@@ -5,7 +5,176 @@
 html,
 body {
   font-family: "Open Sans", sans-serif;
-  font-family: "Raleway", sans-serif;
   margin: 0;
   padding: 0;
+}
+
+h1,
+h2,
+h3,
+a,
+input {
+  font-family: "Raleway", sans-serif;
+}
+
+:root {
+  --colorp-dark-blue: hsl(243, 87%, 12%);
+  --colorp-desaturated-blue: hsl(238, 22%, 44%);
+  --colors-bright-blue: hsl(224, 93%, 58%);
+  --colors-moderate-cyan: hsl(170, 45%, 43%);
+  --colorn-light-gray-blue: hsl(240, 75%, 98%);
+  --colorn-light-gray: hsl(0, 0%, 75%);
+}
+
+.container {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.container-fluid {
+  width: 99.5%;
+  margin: 0 auto;
+}
+
+.color-dark-blue {
+  color: var(--colorp-dark-blue);
+}
+
+.color-white {
+  color: #fff;
+}
+
+.bg-saturated-blue {
+  background-color: var(--colorp-desaturated-blue);
+}
+
+.input-text {
+  padding: 8px;
+  outline: none;
+  width: 90%;
+}
+
+.button {
+  padding: 10px 40px;
+  background-color: var(--colors-bright-blue);
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.title {
+  font-size: 35px;
+}
+
+.form {
+  flex-direction: column;
+  align-items: center;
+}
+
+.form > * {
+  width: 90%;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.template-1 {
+  grid-template-areas: "image" "description";
+}
+
+.image {
+  grid-area: image;
+}
+
+.description {
+  grid-area: description;
+}
+
+.flex {
+  display: flex;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.justify-content-end {
+  justify-content: flex-end;
+}
+
+.list-style-none {
+  list-style: none;
+}
+
+.text-decoration-none {
+  text-decoration: none;
+}
+
+.mr-1 {
+  margin-right: 1em;
+}
+
+.mt-1 {
+  margin-top: 1em;
+}
+
+.my-3 {
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
+
+.pl-0 {
+  padding-left: 0;
+}
+
+.py-5 {
+  padding: 5em 0;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.w-50 {
+  width: 50%;
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 85%;
+  }
+
+  .container-fluid {
+    width: 98%;
+  }
+
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .template-1 {
+    grid-template-areas: "description image";
+  }
+  .form {
+    display: block;
+  }
+
+  .form > * {
+    width: auto;
+  }
+
+  .input-text {
+    margin-right: 0.5em;
+    width: 55%;
+  }
+
+  .text-left-md {
+    text-align: left;
+  }
 }

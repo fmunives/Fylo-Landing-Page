@@ -24,38 +24,58 @@
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
-    <nav>
+    <nav class="flex container justify-content-between mt-1">
       <div>
-        <img src="./images/logo.svg" alt="logo" />
+        <img src="./images/logo.svg" alt="logo" class="w-100" />
       </div>
-      <ul>
-        <li><a href="">Features</a></li>
-        <li><a href="">Team</a></li>
-        <li><a href="">Sign In</a></li>
+      <ul class="flex list-style-none pl-0 justify-content-end w-100">
+        <li>
+          <a class="text-decoration-none mr-1 color-dark-blue" href=""
+            >Features</a
+          >
+        </li>
+        <li>
+          <a class="text-decoration-none mr-1 color-dark-blue" href="">Team</a>
+        </li>
+        <li>
+          <a class="text-decoration-none color-dark-blue" href="">Sign In</a>
+        </li>
       </ul>
     </nav>
-    <main>
-      <section>
-        <div>
-          <h1>All your files in one secure location, accessible anywhere.</h1>
-          <p>
+    <main class="">
+      <section class="container grid template-1 my-3">
+        <div class="despcription text-center text-left-md">
+          <h1 class="color-dark-blue title">
+            All your files in one secure location, accessible anywhere.
+          </h1>
+          <p class="color-dark-blue">
             Fylo stores your most important files in one secure location. Access
             them wherever you need, share and collaborate with friends, family,
             and co-workers.
           </p>
-          <form action="">
-            <input type="text" name="" id="" />
-            <input type="submit" value="Get Started" />
+          <form action="" class="flex form">
+            <input
+              class="input-text"
+              type="text"
+              placeholder="Enter your name"
+            />
+            <input
+              class="button color-white mt-1"
+              type="submit"
+              value="Get Started"
+            />
           </form>
         </div>
-        <div>
-          <img src="./images/illustration-1.svg" alt="image 1" />
+        <div class="image">
+          <img class="w-100" src="./images/illustration-1.svg" alt="image 1" />
         </div>
       </section>
-      <section>
-        <div>
-          <h1>Stay productive, wherever you are</h1>
-          <p>
+      <section class="container grid template-1 my-3">
+        <div class="description">
+          <h1 class="color-dark-blue title">
+            Stay productive, wherever you are
+          </h1>
+          <p class="color-dark-blue">
             Never let location be an issue when accessing your files. Fylo has
             you covered for all of your file storage needs. <br />
             Securely share files and folders with friends, family and colleagues
@@ -81,24 +101,34 @@
             </div>
           </div>
         </div>
-        <div>
-          <img src="./images/illustration-2.svg" alt="image 2" />
+        <div class="image">
+          <img class="w-100" src="./images/illustration-2.svg" alt="image 2" />
         </div>
       </section>
-      <section>
-        <div>
-          <h1>Get early access today</h1>
-          <p>
-            It only takes a minute to sign up and our free starter tier is
-            extremely generous. If you have any questions, our support team
-            would be happy to help you.
-          </p>
-        </div>
-        <div>
-          <form action="">
-            <input type="text" />
-            <input type="submit" value="Get Started For Free" />
-          </form>
+      <section class="my-3 bg-saturated-blue">
+        <div class="container grid py-5">
+          <div class="text-center text-left-md">
+            <h1 class="color-white title">Get early access today</h1>
+            <p class="color-white">
+              It only takes a minute to sign up and our free starter tier is
+              extremely generous. If you have any questions, our support team
+              would be happy to help you.
+            </p>
+          </div>
+          <div class="">
+            <form action="" class="flex form">
+              <input
+                class="input-text"
+                type="text"
+                placeholder="Enter your name"
+              />
+              <input
+                class="button color-white mt-1"
+                type="submit"
+                value="Get Started For Free"
+              />
+            </form>
+          </div>
         </div>
       </section>
     </main>
@@ -109,34 +139,40 @@
           <div>
             <img src="./images/logo.svg" alt="logo" />
           </div>
-          <ul>
+          <ul class="list-style-none">
             <li>
               <img src="./images/icon-phone.svg" alt="phone" />
-              <span>Phone:<a href="">+1-543-123-4567</a> </span>
+              <span
+                >Phone:<a href="" class="text-decoration-none"
+                  >+1-543-123-4567</a
+                >
+              </span>
             </li>
             <li>
               <img src="./images/icon-email.svg" alt="email" />
-              <span><a href="">example@fylo.com</a> </span>
+              <span
+                ><a href="" class="text-decoration-none">example@fylo.com</a>
+              </span>
             </li>
           </ul>
         </div>
         <div>
-          <ul>
-            <li><a href="">About Us</a></li>
-            <li><a href="">Jobs</a></li>
-            <li><a href="">Press</a></li>
-            <li><a href="">Blog</a></li>
+          <ul class="list-style-none">
+            <li><a class="text-decoration-none" href="">About Us</a></li>
+            <li><a class="text-decoration-none" href="">Jobs</a></li>
+            <li><a class="text-decoration-none" href="">Press</a></li>
+            <li><a class="text-decoration-none" href="">Blog</a></li>
           </ul>
         </div>
         <div>
-          <ul>
-            <li><a href="">Contact Us</a></li>
-            <li><a href="">Terms</a></li>
-            <li><a href="">Privacy</a></li>
+          <ul class="list-style-none">
+            <li><a class="text-decoration-none" href="">Contact Us</a></li>
+            <li><a class="text-decoration-none" href="">Terms</a></li>
+            <li><a class="text-decoration-none" href="">Privacy</a></li>
           </ul>
         </div>
         <div>
-          <ul>
+          <ul class="list-style-none flex">
             <a href=""><i class="fab fa-facebook-f"></i></a>
           </ul>
           <ul>
